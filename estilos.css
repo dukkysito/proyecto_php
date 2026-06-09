@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --bg-main: #000000;
+    --bg-card: #0a0a0c;
+    --border-hard: #222226;
+    --border-focus: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #88888b;
+    --clr-ok: #00ff66;
+    --clr-info: #00e5ff;
+    --clr-warn: #ffb700;
+    --clr-bad: #ff3333;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border: 2px solid var(--border-hard);
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--border-hard);
+    padding-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #000000;
+    border: 1px solid var(--border-hard);
+    color: var(--text-primary);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--border-focus);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn:
